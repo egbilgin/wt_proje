@@ -83,6 +83,12 @@ nav {
 
 }
 
+.container #logo-box{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    text-align: center;
+    }
+
 #logo-box .logo {
     color: #75B7E5;
     font-weight: 700;
@@ -177,7 +183,7 @@ hr.star-dark {
 
 #portfolio {
     height: 600px;
-    background-color: #1ABC9B;
+    background-color: #e9ecef;
     padding-top: 10rem;
     padding-bottom: 10rem;
     text-align: center;
@@ -187,6 +193,13 @@ hr.star-dark {
 #portfolio h2 {
     font-size: 4.8rem;
     color: #2D3D4F;
+}
+
+.col {
+    float: left;
+    width: 33.333%;
+    padding: 10px;
+
 }
 
 .img-fluid-p {
@@ -233,7 +246,7 @@ hr.star-dark {
 
 /* About */
 
-#about {
+/*#about {
     background-color: #1ABC9B;
     color: #fff;
 }
@@ -278,11 +291,11 @@ hr.star-dark {
         padding-right: 210px;
         padding-left: 10px;
     }
-}
+}*/
 
 /* Contact */
 
-#contact h2 {
+/*#contact h2 {
     font-size: 4.8rem;
     color: #2c3e50;
 }
@@ -312,11 +325,11 @@ hr.star-dark {
 
 .form-group textarea:focus {
     outline: 0;
-}
+}*/
 
 /* Footer */
 
-footer {
+/*footer {
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: #2C3E4F;
@@ -344,4 +357,4 @@ footer li {
     padding-bottom: 2.4rem;
     color: #fff;
     text-align: center;
-}
+}*/

@@ -1,0 +1,188 @@
+html{
+    font-size: 6px;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+header{
+background-color: #4E1320;
+color: #fff;
+
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.container #baslik{
+
+    color: #fff;
+}
+
+h1,h5{
+    padding-top: 100rem;
+    padding: 5rem;
+    font-weight: 700;
+    font-size: 5rem;
+    font-family: Montserrat;
+    text-align: center;
+
+}
+
+.container h5{
+    padding: 0rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container #slider{
+    padding-top: 5rem;
+}
+
+#paragraf{
+    padding: 10rem;
+    
+}
+header h1{ 
+    padding-top: 25rem;
+}
+
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/*
+NAVBAR*/
+
+nav {
+    width: 100%;
+    font-family: Montserrat;
+    background-color: #5A0E27;
+    color: #75B7E5;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    z-index: 500;
+
+}
+
+#logo-box {
+    float: left;
+    /* padding: 0.5rem; */
+    padding-top: 0.5 rem;
+
+
+}
+
+#logo-box a{
+    text-decoration: none;
+}
+
+
+/* dikkkattt */
+  .container #logo-box {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    /* text-align: center; */
+    font-size: larger;
+    
+}  
+
+#logo-box .logo {
+    color: #75B7E5;
+    font-weight: 700; 
+    font-size: 2.8 rem;
+}
+
+#nav-links {
+    float: right;
+    
+}
+
+ #nav-links .nav-item {
+
+    float: left;
+    margin: 0.5rem;
+    
+
+} 
+
+#nav-links .nav-link {
+    color: #75B7E5;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.4s;
+
+}
+
+#nav-links .nav-link:hover {
+    color: #fff;
+}
+
+#nav-links .nav-icon {
+
+    display: none;
+
+}
+
+@media (max-width:992px) {
+
+    #logo-box {
+        float: none;
+        text-align: left;
+    }
+
+    #nav-links {
+        float: none;
+    }
+
+    #nav-links .nav-link {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    #nav-links .nav-item {
+
+        float: none;
+        text-align: left;
+
+    }
+
+    #nav-links .nav-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        font-size: 3rem;
+
+    }
+
+    #nav-links.responsive li:not(:first-child){
+        display: none;
+
+    }
+
+
+
+
+}

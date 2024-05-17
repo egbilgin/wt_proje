@@ -9,11 +9,9 @@
     <title>Anasayfa</title>
     <link rel="stylesheet" href="sytle.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,47 +28,59 @@
     <nav>
         <div class="container clearfix">
             <div id="logo-box">
-                <a href="/" class="logo text-uppercase">
-                    Nav Ana Başlık
+                <a href="anasayfa.html" class="logo text-uppercase">
+                    EGB
                 </a>
             </div>
 
-            <div id="nav-links">
+            <div id="nav-links" class="responsive">
                 <ul>
+
+
+                    <li class="nav-item text-uppercase nav-icon">
+                        <a href="#" class="nav-link ">
+                            <i class="fas fa-bars"></i>
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="#" class="nav-link">
+                            ÖZGEÇMİŞ
+                        </a>
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="#" class="nav-link">
+                            İLGİ ALANLARIM
+                        </a>
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="sehrim.html" class="nav-link">
+                            ŞEHRİM
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item text-uppercase">
+                        <a href="#" class="nav-link">
+                            ŞEHİR TAKIMI
+                        </a>
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="#contact" class="nav-link">
+                            İLETİŞİM
+                        </a>
+                    </li>
+
                     <li class="nav-item text-uppercase ">
-                        <a href="#" class="nav-link">
-                            Giriş Yap
+                        <a href="#" class="nav-link "><i class="fa fa-fw fa-user"></i>
+                            GİRİŞ YAP
                         </a>
-                    </li>
 
-                    <li class="nav-item text-uppercase">
-                        <a href="#" class="nav-link">
-                            İletişim
-                        </a>
-                    </li>
-
-                    <li class="nav-item text-uppercase">
-                        <a href="#" class="nav-link">
-                            Şehir Takımı
-                        </a>
-                    </li>
-
-                    <li class="nav-item text-uppercase">
-                        <a href="#" class="nav-link">
-                            Şehrim
-                        </a>
-                    </li>
-
-                    <li class="nav-item text-uppercase">
-                        <a href="#" class="nav-link">
-                            İlgi Alanlarım
-                        </a>
-                    </li>
-
-                    <li class="nav-item text-uppercase">
-                        <a href="#" class="nav-link">
-                            Özgeçmiş
-                        </a>
                     </li>
                 </ul>
 
@@ -80,12 +90,14 @@
 
     <header>
         <div class="container">
-            <img id="profile-image" class="img-fluid" src="TS2_logo.png">
-            <h1 class="text-uppercase">Start bootstrap</h1>
+            <img id="profile-image" class="img-fluid"
+                src="images/Ekran Resmi 2024-05-16 17,21,26-photoaidcom-cropped.png">
+            <h1 class="text-uppercase"> Esma Gülsüm BİLGİN</h1>
             <hr class="star-light">
             <h2>Grapic Artist - Web Designer - Illustrator</h2>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro totam nostrum eaque, velit explicabo
+            <!-- <br> -->
+            <p id="header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro totam nostrum eaque,
+                velit explicabo
                 necessitatibus numquam, tempora dolor architecto laboriosam veritatis et similique reprehenderit
                 pariatur
                 cum molestias ut magni asperiores?
@@ -106,6 +118,7 @@
                     <div class="portfolio-item">
                         <a href="#">
                             <img class="img-fluid-p" src="images/cake.png" alt="">
+
                             <div class="img-overlay">
                                 <div class="icon">
                                     <i class="fas fa-plus"></i>
@@ -196,6 +209,195 @@
 
         </div>
     </section>
+
+    <section id="about">
+
+        <h2 class="text-uppercase">
+            hakkında
+        </h2>
+        <hr class="star-light">
+        <div id="about-text" class="clearfix">
+
+            <!-- DİKKAT BURAYA CLEAR FİX TİRE VAR MI YOK MU KONTROL ET -->
+
+            <div class="left">
+                <p class="text">
+                    Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete
+                    source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
+                    customization.
+                </p>
+            </div>
+
+            <div class="right">
+                <p class="text">
+                    You can create your own custom avatar for the masthead, change the icon in the dividers, and add
+                    your email address to the contact form to make it fully functional!
+                </p>
+
+            </div>
+        </div>
+
+        <!-- <button class="btn btn-outline btn-large">
+            <i class="fas fa-download"></i>
+            Download Now!
+        </button> -->
+
+
+    </section>
+
+    <section id="contact">
+        <div class="container">
+
+            <h2 class="text-uppercase">
+                BİZE Ulaşın
+            </h2>
+            <hr class="star-dark">
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" placeholder="Name">
+
+                </div>
+
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email">
+
+                </div>
+
+                <div class="form-group">
+                    <i class="fas fa-phone"></i>
+                    <input type="number" id="phone" placeholder="Phone">
+
+                </div>
+
+                <div class="form-group">
+                    <!-- <i class="fa regular fa-message"></i> -->
+                    <textarea id="message" rows="8" placeholder="Message"></textarea>
+                </div>
+
+                <button class="btn btn-primary">
+                    Send
+                </button>
+
+                <input class="btn btn-primary" type="button" value="Temizle" onclick="clearForm()">
+
+
+
+            </form>
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="container clearfix">
+
+            <!-- DİKKAT BURAYA CLEAR FİX TİRE VAR MI YOK MU KONTROL ET -->
+
+            <div class="col">
+
+                <h4 class="text-uppercase">
+                    Location
+                </h4>
+
+                <p>2215 John Daniel Drive
+                    Clark, MO 65243</p>
+
+            </div>
+
+            <div class="col">
+
+                <h4 class="text-uppercase">
+                    Around the Web
+                </h4>
+                <ul>
+
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                    </li>
+
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+
+                    </li>
+
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-linkedin-in"></i>
+                        </button>
+
+                    </li>
+
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-dribbble"></i>
+                        </button>
+
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col">
+
+                <h4 class="text-uppercase">
+                    Around Freelancer
+                </h4>
+                <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap .
+
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+
+            <small>Copyright © Your Website 2021</small>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(".nav-icon").click(function () {
+            $("#nav-links").toggleClass("responsive")
+
+            return false;
+        });
+
+
+        function clearForm() {
+            // Formdaki tüm giriş elemanlarını seç
+            var formElements = document.getElementById("contact-form").elements;
+
+            // Her bir giriş elemanını dolaşarak değerlerini temizle
+            for (var i = 0; i < formElements.length; i++) {
+                var element = formElements[i];
+                if (element.type === "text" || element.type === "textarea" || element.type === "email" || element.type === "number" || element.type === "password") {
+                    element.value = "";
+                }
+            }
+        }
+
+
+
+    </script>
+
 
 
 </body>

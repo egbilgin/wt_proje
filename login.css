@@ -1,0 +1,100 @@
+/* Genel ayarlar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #5A0E27; /* Bordo arka plan rengi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Konteyner ayarları */
+  .container {
+    background-color: #75B7E5; /* Mavi giriş kısmı rengi */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  
+  /* Başlık ayarları */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF; /* Beyaz başlık rengi */
+    margin-bottom: 20px;
+  }
+  
+  /* Girdi kutusu ayarları */
+  .input-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .input-box .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF; /* Beyaz alt çizgi */
+  }
+  
+  .input-box.button input {
+    background-color: #FFFFFF; /* Beyaz buton rengi */
+    color: #75B7E5; /* Mavi yazı rengi */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-box.button input:hover {
+    background-color: #E0E0E0; /* Açık gri buton hover rengi */
+  }
+  
+
+
+
+.input-kutu input {
+    width: 350px;
+height: 40px;
+font-size: 20px;
+color: #5A0E27;
+background: transparent;
+padding-left: 10px;
+color: #fff;
+
+}
+::placeholder{
+    color: #5A0E27;
+
+}
+
+button{
+    width: 130px;
+    height: 40px;
+    font-size: 25px;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.8s;
+    border-radius: 25px;
+}
+
+buton:hover{
+    width: 300px;
+box-shadow: #fff;
+}

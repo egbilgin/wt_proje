@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #45a049;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.movie {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.movie-poster {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.movie-info {
+    display: flex;
+    align-items: center;
+}
+.movie-details {
+    display: flex;
+    flex-direction: column;
+}
+.movie-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}

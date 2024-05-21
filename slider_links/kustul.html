@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="sml.css">
+
+    <title>Kuştul Manastırı</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="anasayfa.html" class="logo text-uppercase">
+                    EGB
+                </a>
+            </div>
+
+            <div id="nav-links" class="responsive">
+                <ul>
+
+
+                    <li class="nav-item text-uppercase nav-icon">
+                        <a href="#" class="nav-link ">
+                            <i class="fas fa-bars"></i>
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="cv.html" class="nav-link">
+                            ÖZGEÇMİŞ
+                        </a>
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="#" class="nav-link">
+                            İLGİ ALANLARIM
+                        </a>
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="sehrim.html" class="nav-link">
+                            ŞEHRİM
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item text-uppercase">
+                        <a href="sehirT.html" class="nav-link">
+                            ŞEHİR TAKIMI
+                        </a>
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="#contact" class="nav-link">
+                            İLETİŞİM
+                        </a>
+                    </li>
+
+                    <li class="nav-item text-uppercase ">
+                        <a href="#" class="nav-link "><i class="fa fa-fw fa-user"></i>
+                            GİRİŞ YAP
+                        </a>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="container">
+
+            <h1>Kuştul Manastırı</h1>
+            <p>Kuştul veya Hızır İlyas Manastırı (Yunanca: Ιερά Μονή του Αγίου Γεωργίου Περιστερεώτα Iera Moni tou Agiou
+                Georgiou Peisteriota "Aziz George Peristeriotas Manastırı"), Trabzon ili Maçka ilçesi Esiroğlu Beldesi
+                Şimşirli sınırları içerisinde bulunan; turizm açısından önem taşıyan bir manastır. 1923 yılında Rum
+                Kırımı ve Mübadele sorunu'ndan dolayı terk edilmek zorunda kalmıştır.
+                Kuştul Manastırı, 752 tarihinde yapılmış olup 1203'te yağmalanıp bir süre terk edildikten sonra 1393'te
+                tekrar faaliyete başlamıştır. 1904'teki yangında tamamen yanınca üçüncü kez yapılmıştır. Günümüze pek az
+                kalıntısı gelen manastırın içindeki mağaranın kuzeyine yaslanmış küçük kilisenin çok eski olmadığı
+                bilinmektedir. Manastırın içine girilince, iç avlunun sağında ve solunda iki-üç katlı manastır odaları
+                yerleştirildiği görülmektedir. Kuzeydekilerin misafir odaları, güneydekiler keşiş odaları olarak
+                tanımlanmaktadır. Cumont'un 1903'te çektiği fotoğraftan manastırın; büyük bir kilisenin yanında haç
+                planlı başka bir kilise ile manastır yapılarından oluştuğu anlaşılmaktadır. Batı cephesinden bir
+                merdivenle içine girilen manastır; geniş holleri ve salonlarıyla dikkat çekmektedir. Haç planlı kilisesi
+                zamanla yıkılmış ve hiçbir iz bırakmadan yok olmuştur. Bu yok oluşun manastırın define avcılarınca
+                tahrip edilmesinden kaynaklandığı iddia edilmektedir. Manastırın batıya uzanan dehlizleri olduğu
+                belirlenmişse de bugün kullanılmaz durumdadır.</p>
+           
+
+        </div>
+    </header>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(".nav-icon").click(function () {
+            $("#nav-links").toggleClass("responsive")
+
+            return false;
+        });
+
+
+        function clearForm() {
+            // Formdaki tüm giriş elemanlarını seç
+            var formElements = document.getElementById("contact-form").elements;
+
+            // Her bir giriş elemanını dolaşarak değerlerini temizle
+            for (var i = 0; i < formElements.length; i++) {
+                var element = formElements[i];
+                if (element.type === "text" || element.type === "textarea" || element.type === "email" || element.type === "number" || element.type === "password") {
+                    element.value = "";
+                }
+            }
+        }
+
+
+
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

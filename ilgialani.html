@@ -1,0 +1,65 @@
+<h1>Film Arama Uygulaması</h1>
+<input type="text" id="searchInput" placeholder="Film adı girin">
+<button onclick="fetchData()">Ara</button>
+<ul id="data"></ul>
+<link rel="stylesheet" href="ilgialani.css">
+<script>
+    async function fetchData() {
+        const dataList = document.getElementById('data');
+        const searchInput = document.getElementById('searchInput').value.trim();
+        dataList.innerHTML = '<li>Yükleniyor...</li>';
+
+        if (!searchInput) {
+            dataList.innerHTML = '<li>Lütfen bir film adı girin</li>';
+            return;
+        }
+
+        const apiKey = '13eff7fa';
+
+        try {
+            const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(searchInput)}`);
+            if (!response.ok) {
+                throw new Error('Ağ hatası oldu');
+            }
+            const data = await response.json();
+
+            dataList.innerHTML = '';
+
+            if (data.Response === "False") {
+                dataList.innerHTML = '<li>Sonuç bulunamadı</li>';
+                return;
+            }
+
+            data.Search.forEach(movie => {
+                const listItem = document.createElement('li');
+                listItem.className = 'movie';
+
+                const movieInfo = document.createElement('div');
+                movieInfo.className = 'movie-info';
+
+                const moviePoster = document.createElement('img');
+                moviePoster.className = 'movie-poster';
+                moviePoster.src = movie.Poster !== "N/A" ? movie.Poster : 'placeholder.png';
+                moviePoster.alt = movie.Title;
+
+                const movieDetails = document.createElement('div');
+                const movieTitle = document.createElement('div');
+                movieTitle.className = 'movie-title';
+                movieTitle.textContent = `${movie.Title} (${movie.Year})`;
+
+                const movieType = document.createElement('div');
+                movieType.textContent = `Tür: ${movie.Type}`;
+
+                movieDetails.appendChild(movieTitle);
+                movieDetails.appendChild(movieType);
+                movieInfo.appendChild(moviePoster);
+                movieInfo.appendChild(movieDetails);
+                listItem.appendChild(movieInfo);
+
+                dataList.appendChild(listItem);
+            });
+        } catch (error) {
+            dataList.innerHTML = `<li>Veri alırken hata oluştu: ${error.message}</li>`;
+        }
+    }
+</script>
